@@ -18,7 +18,7 @@
         }
 
         body {
-            background: #eee;
+            background: white;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
             font-size: 14px;
             color: #000;
@@ -615,20 +615,430 @@
                 <fieldset>
                     <input id="draft" class="peer/draft hidden" type="radio" name="status" checked />
                     <input id="published" class="peer/published hidden" type="radio" name="status" />
-                    <div class="hidden peer-checked/draft:block">"Lorem ipsum dolor sit amet consectetur adipisicing
+                    <input id="published2" class="peer/published2 hidden" type="radio" name="status" />
+                    <div class="hidden peer-checked/draft:block pb-8">"Lorem ipsum dolor sit amet consectetur
+                        adipisicing
                         elit. Eum alias nesciunt pariatur voluptatem atque tempore deleniti aut totam quis saepe.
                         Tenetur consequatur praesentium, repudiandae eligendi iure at soluta harum quisquam?"</div>
-                    <div class="hidden peer-checked/published:block">"What do you know about Lorem ipsum dolor sit amet
+                    <div class="hidden peer-checked/published:block pb-8">"What do you know about Lorem ipsum dolor sit
+                        amet
+                        consectetur adipisicing elit. Eum alias nesciunt pariatur empore deleniti aut
+                        totam quis saepe. Tenetur consequatur praesentium, repudiandae eligendi iure at soluta harum
+                        quisquam?"
+                    </div>
+                    <div class="hidden peer-checked/published2:block pb-8">"What do you know about published 2 that is
+                        whta you shoud knko about
+                        amet
                         consectetur adipisicing elit. Eum alias nesciunt pariatur empore deleniti aut
                         totam quis saepe. Tenetur consequatur praesentium, repudiandae eligendi iure at soluta harum
                         quisquam?"
                     </div>
 
 
-                    <label for="draft" class="peer-checked/draft:text-sky-500 mr-8">Draft</label>
-                    <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+                    <label for="draft"
+                        class="peer peer-checked/draft:text-sky-500   group  inline-flex gap-2 cursor-pointer ">
+                        <div
+                            class="border peer-has-[:checked]:relative peer-has-[:checked]:border-sky-500      p-2 rounded-full ">
+
+                            <div class="overflow-hidden object-fit w-[40px] h-[40px] rounded-full ">
+                                <img class="object-cover w-[100%] h-[100%]" src="./img/doctor-1.png" alt="doctor">
+                            </div>
+                            <div
+                                class="absolute -top-3 w-8 h-8 -left-3 rounded-full bg-white flex items-center justify-center">
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+
+
+                        </div>
+                        <div class="">
+                            <h2 class="text-sm">Sami Wade</h2>
+                            <p class="text-gray-400 text-xs">Promina</p>
+                        </div>
+                    </label>
+                    <label for="published"
+                        class="peer-checked/published:text-sky-500 inline-flex gap-4 cursor-pointer ml-8 ">
+                        <div class="border border-sky-500 p-2 rounded-full">
+
+                            <div class="overflow-hidden object-fit w-[40px] h-[40px] rounded-full ">
+                                <img class="object-cover w-[100%] h-[100%]" src="./img/doctor-1.png" alt="doctor">
+                            </div>
+                            <div class="absolute -top-4 w-8 h-8 -left-4">
+
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <h2 class="text-sm">Sami Wade</h2>
+                            <p class="text-gray-400 text-xs">Promina</p>
+                        </div>
+                    </label>
+                    <label for="published2"
+                        class="peer-checked/published2:text-sky-500 mr-8 inline-flex gap-4 cursor-pointer ml-8 ">
+                        <div class="border border-sky-500 p-2 rounded-full">
+
+                            <div class="overflow-hidden object-fit w-[40px] h-[40px] rounded-full ">
+                                <img class="object-cover w-[100%] h-[100%]" src="./img/doctor-1.png" alt="doctor">
+                            </div>
+                            <div class="absolute -top-4 w-8 h-8 -left-4">
+
+                            </div>
+
+                        </div>
+                        <div class="">
+                            <h2 class="text-sm">Sami Wade</h2>
+                            <p class="text-gray-400 text-xs">Promina</p>
+                        </div>
+                    </label>
 
                 </fieldset>
+            </div>
+        </div>
+        <div
+            class="flex items-center  gap-8 p-8 w-[1000px] mt-[100px] mx-auto rounded-2xl bg-white shadow-2xl shadow-gray-400 ">
+            <form action="" class="w-4/6 p-4  flex flex-col gap-2 ">
+                <h2 class="text-lg text-blue-950">Book An Appointment</h2>
+                <p class="text-gray-400 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                    molestias
+                    ipsa, ea laboriosam error aliquid.</p>
+                <div class="grid grid-cols-2 gap-4 ">
+                    <div
+                        class="relative border inline-flex items-center overflow-hidden rounded-full p-2 cursor-pointer bg-white">
+                        <div class="absolute left-4 flex items-center">
+                            <i class="fa-solid fa-puzzle-piece text-lg text-gray-300"></i>
+                        </div>
+
+                        <select
+                            class="appearance-none cursor-pointer w-full bg-white  text-blue-900 py-2 pl-10 pr-8 rounded leading-tight focus:outline-none focus:border-blue-500">
+                            <option value="Patholoy clinic" selected></option> <!-- Empty option -->
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+
+                        <div
+                            class="absolute right-2 pointer-events-none flex items-center justify-center bg-blue-950 text-white rounded-full p-2">
+                            <!-- Caret Icon -->
+                            <svg class="w-4 h-4 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="relative border inline-flex items-center overflow-hidden rounded-full p-2 cursor-pointer bg-white">
+                        <div class="absolute left-4 flex items-center">
+                            <i class="fa-solid fa-user text-lg text-gray-300"></i>
+                        </div>
+
+                        <select
+                            class="appearance-none cursor-pointer w-full bg-white  text-blue-900 py-2 pl-10 pr-8 rounded leading-tight focus:outline-none focus:border-blue-500">
+                            <option value="Choose Doctor" selected></option> <!-- Empty option -->
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+
+                        <div
+                            class="absolute right-2 pointer-events-none flex items-center justify-center bg-blue-950 text-white rounded-full p-2">
+                            <!-- Caret Icon -->
+                            <svg class="w-4 h-4 cursor-pointer" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div
+                        class="relative border inline-flex items-center overflow-hidden rounded-full p-2 cursor-pointer bg-white">
+                        <div class="absolute left-4 flex items-center">
+                            <i class="fa-solid fa-file text-xl  text-gray-300"></i>
+                        </div>
+
+                        <input type="text" placeholder="Name"
+                            class="w-full pl-10 text-md py-1.5 focus:border-none focus:outline-none">
+                    </div>
+                    <div
+                        class="relative border inline-flex items-center overflow-hidden rounded-full p-2 cursor-pointer bg-white">
+                        <div class="absolute left-4 flex items-center">
+                            <i class="fa-solid fa-envelope text-xl  text-gray-300"></i>
+                        </div>
+
+                        <input type="email" placeholder="Email"
+                            class="w-full pl-10 text-md py-1.5 focus:border-none focus:outline-none">
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 py-4">
+                    <div
+                        class="relative border inline-flex items-center  overflow-hidden rounded-full p-2 cursor-pointer bg-white">
+                        <div class="absolute left-4 flex items-center">
+                            <i class="fa-solid fa-phone text-xl  text-gray-300"></i>
+                        </div>
+
+                        <input type="number" placeholder="Email"
+                            class="w-full pl-10 text-md py-1.5 focus:border-none focus:outline-none">
+                    </div>
+                    <div
+                        class="relative border inline-flex items-center overflow-hidden rounded-full p-2 cursor-pointer bg-white">
+                        <div class="absolute left-4 flex items-center">
+                            <i class="fa-solid fa-calendar text-xl  text-gray-300"></i>
+                        </div>
+
+                        <input type="date" placeholder="Select date"
+                            class="w-full pl-10 text-md py-1.5 focus:border-none focus:outline-none">
+                    </div>
+                    <div
+                        class="relative border inline-flex items-center overflow-hidden rounded-full p-2 cursor-pointer bg-white">
+                        <div class="absolute left-4 flex items-center">
+                            <i class="fa-solid fa-clock text-xl  text-gray-300"></i>
+                        </div>
+
+                        <input type="time" placeholder="Select time"
+                            class="w-full pl-10 text-md py-1.5 focus:border-none focus:outline-none">
+                    </div>
+
+                </div>
+                <button class="rounded-3xl bg-blue-900 text-white text-sm py-4 px-3"><i
+                        class="fa-regular fa-calendar mr-2"></i>Appointment</button>
+            </form>
+            <div class="w-2/6">
+
+                <div
+                    class="bg-teal-400 rounded-2xl flex flex-col gap-4 relative  p-8 before:content-[''] before:h-[80%] before:w-[5px] before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[2px] before:bg-blue-950  ">
+                    <h2 class="text-white text-2xl">Quick Contact</h2>
+                    <p class="text-white text-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                    </p>
+                    <div class="flex flex-col gap-2 py-8">
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-phone text-xl  text-white"></i>
+                            <p class="text-white text-sm">Emergency line: 08183928377</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-location-dot text-xl text-white"></i>
+                            <p class="text-white text-sm">Location: Brooklyn, New York, USA</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <i class="fa-solid fa-clock text-xl  text-white"></i>
+
+                            <p class="text-white text-sm">Mon - Fri: 8:00am - 7:00pm</p>
+                        </div>
+                        <div class="">
+
+                            <button
+                                class="rounded-full bg-transparent text-white py-4 text-sm border-2 border-white  px-8  ">Contact
+                                Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="py-10 bg-white mt-[300px]">
+        <div class="flex flex-col items-center w-[400px] mx-auto">
+            <h2 class="text-sm font-bold text-blue-800 ">Health Essentials</h2>
+            <h1 class="text-2xl text-blue-950 font-bold py-4">Recent Articles</h1>
+        </div>
+        <div class="py-4 ">
+
+            <div class="grid grid-cols-3 gap-4 py-[50px] w-[1000px] mx-auto *:rounded-md">
+                <div class=" ">
+                    <div
+                        class="group bg-transparent rounded-xl transition-colors duration-700 hover:bg-white hover:shadow-xl shadow-white cursor-pointer">
+
+                        <div class=" height-[120px] rounded-xl relative">
+                            <img class="z-10 object-cover w-full h-full" src="./img/blog4.PNG" alt="blog1">
+                            <span
+                                class="absolute px-4 py-2 z-50 -bottom-6 left-6 text-sm text-light rounded-r-lg rounded-bl-lg bg-teal-400 text-white">Mental
+                                Health</span>
+                        </div>
+                        <div class="p-8  flex flex-col gap-4">
+                            <div class="flex flex-col gap-4">
+                                <div class="text-blue-800 divide-x divide-gray-400  ">
+                                    <span class="pr-2">June 22, 2022</span>
+                                    <span class="pl-2">John Ezak</span>
+                                </div>
+                                <h2 class="text-xl font-kan text-blue-900 font-bold">Health Essential</h2>
+                            </div>
+                            <p class="text-gray-500 text-sm font-light">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Adipisci asperiores facilis odio eos voluptates distinctio quo corporis labore
+                                ipsam
+                                explicabo.</p>
+                            <div class="">
+
+                                <button
+                                    class="rounded-full   text-blue-900 bg-transparent py-3 text-sm  hover:bg-blue-900 hover:text-white   px-4  ">
+                                    Read More<i class="fa-solid fa-arrow-right ml-4"></i></button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div
+                        class="group bg-transparent rounded-xl transition-colors duration-700 hover:bg-white hover:shadow-xl shadow-white cursor-pointer">
+
+                        <div class=" height-[120px] rounded-xl relative">
+                            <img class="z-10 object-cover w-full h-full" src="./img/blog4.PNG" alt="blog1">
+                            <span
+                                class="absolute px-4 py-2 z-50 -bottom-6 left-6 text-sm text-light rounded-r-lg rounded-bl-lg bg-teal-400 text-white">Mental
+                                Health</span>
+                        </div>
+                        <div class="p-8  flex flex-col gap-4">
+                            <div class="flex flex-col gap-4">
+                                <div class="text-blue-800 divide-x divide-gray-400  ">
+                                    <span class="pr-2">June 22, 2022</span>
+                                    <span class="pl-2">John Ezak</span>
+                                </div>
+                                <h2 class="text-xl font-kan text-blue-900 font-bold">Health Essential</h2>
+                            </div>
+                            <p class="text-gray-500 text-sm font-light">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Adipisci asperiores facilis odio eos voluptates distinctio quo corporis labore
+                                ipsam
+                                explicabo.</p>
+                            <div class="">
+
+                                <button
+                                    class="rounded-full   text-blue-900 bg-transparent py-3 text-sm  hover:bg-blue-900 hover:text-white   px-4  ">
+                                    Read More<i class="fa-solid fa-arrow-right ml-4"></i></button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" ">
+                    <div
+                        class="group bg-transparent rounded-xl transition-colors duration-700 hover:bg-white hover:shadow-xl shadow-white cursor-pointer">
+
+                        <div class=" height-[120px] rounded-xl relative">
+                            <img class="z-10 object-cover w-full h-full" src="./img/blog4.PNG" alt="blog1">
+                            <span
+                                class="absolute px-4 py-2 z-50 -bottom-6 left-6 text-sm text-light rounded-r-lg rounded-bl-lg bg-teal-400 text-white">Mental
+                                Health</span>
+                        </div>
+                        <div class="p-8  flex flex-col gap-4">
+                            <div class="flex flex-col gap-4">
+                                <div class="text-blue-800 divide-x divide-gray-400  ">
+                                    <span class="pr-2">June 22, 2022</span>
+                                    <span class="pl-2">John Ezak</span>
+                                </div>
+                                <h2 class="text-xl font-kan text-blue-900 font-bold">Health Essential</h2>
+                            </div>
+                            <p class="text-gray-500 text-sm font-light">Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Adipisci asperiores facilis odio eos voluptates distinctio quo corporis labore
+                                ipsam
+                                explicabo.</p>
+                            <div class="">
+
+                                <button
+                                    class="rounded-full   text-blue-900 bg-transparent py-3 text-sm  hover:bg-blue-900 hover:text-white   px-4  ">
+                                    Read More<i class="fa-solid fa-arrow-right ml-4"></i></button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="bg-blue-950 py-10">
+        <div class="w-[1000px] mx-auto flex items-center">
+
+            <div class="flex flex-col w-[30%] gap-2">
+                <div class="overflow-hidden w-[70%] h-[100px] flex items-center justify-center ">
+
+                    <img class="object-cover w-[100%] " src="./img/project3_logo-removebg-preview.png" alt="">
+                </div>
+                <p class="text-white text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus id
+                    possimus, atque earum sit aliquid optio! Blanditiis, et, libero dolores laborum vitae mollitia nam
+                    provident quaerat eius suscipit quos sunt?</p>
+                <button class="rounded-full bg-transparent text-teal-400 py-4 text-sm hover:bg-white">Read
+                    Make Appointment<i class="fa-solid fa-arrow-right ml-4"></i></button>
+
+
+            </div>
+
+            <div class="flex  gap-8 w-[40%] px-8">
+                <div class="flex flex-col px-2 gap-2">
+                    <h2 class="text-white text-md font-bold pb-4">Departments</h2>
+                    <span class="text-gray-100 text-light text-sm">Neurology Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Cardeoloy Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Neurology Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Cardeoloy Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Neurology Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Cardeoloy Clinic</span>
+                </div>
+                <div class="flex flex-col px-2 gap-2">
+                    <h2 class="text-white text-md font-bold pb-4">Departments</h2>
+                    <span class="text-gray-100 text-light text-sm">Neurology Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Cardeoloy Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Neurology Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Cardeoloy Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Neurology Clinic</span>
+                    <span class="text-gray-100 text-light text-sm">Cardeoloy Clinic</span>
+                </div>
+
+            </div>
+            <div
+                class="w-[30%] bg-white rounded-2xl flex flex-col gap-4 relative  p-8 before:content-[''] before:h-[80%] before:w-[5px] before:absolute before:top-1/2 before:-translate-y-1/2 before:-left-[2px] before:bg-blue-950  ">
+                <h2 class="text-blue-950 text-sm">Quick Contact</h2>
+                <p class="text-blue-950 text-sm leading-tight py-2">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
+                    elit.
+                </p>
+                <div class="flex flex-col gap-2 py-8">
+                    <div class="flex gap-2">
+                        <i class="fa-solid fa-phone text-xl  text-blue-950"></i>
+                        <p class="text-blue-950 text-xl"> 08183928377</p>
+                    </div>
+
+                    <p class="text-blue-950 text-sm leading-tight py-2">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing
+                        elit.
+                    </p>
+
+                    <div class="flex gap-2 items-center">
+
+                        <button class="rounded-full bg-transparent text-teal-400 py-4 text-sm  px-8  ">Contact
+                            Us</button>
+                        <div class="flex gap-2">
+                            <i class="fa-brands text-blue-950 text-sm fa-facebook"></i>
+                            <i class="fa-brands text-blue-950 text-sm fa-twitter"></i>
+                            <i class="fa-brands text-blue-950 text-sm fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div
+        class="bg-white relative before:absolute  before:bg-teal-400  before:w-[90%] before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:h-[5px] ">
+        <div class="w-[1000px] mx-auto py-4 flex justify-between items-center text-gray-400">
+            <div class="text-sm">@2022 medcity All right reserved with love <span
+                    class="text-teal-400">samicowest.com</span></div>
+            <div class="flex gap-8 items-center">
+                <span class="text-gray-400 text-sm">Terms and Condition</span>
+                <span class="text-gray-400 text-sm">Privacy and Policy</span>
+                <span class="text-gray-400 text-sm">Cookies</span>
+                <span class="bg-teal-400 text-white flex items-center rounded-full justify-center w-[50px] h-[50px]"><i
+                        class="fa-solid fa-arrow-up"></i></span>
             </div>
         </div>
     </div>
